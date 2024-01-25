@@ -20,13 +20,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Deployment Of Windows Server 2022
-- Ensure server private IP is set to static
-- Prepping server for domain status
-- Deployment Of Windows 10 (21H2) Client computer
-- Add client computer to the domain
-- Ensure client computer is on the same virtal network with the domain controller (DC)
-- Ensure logins work for admins & non-adnin users
+- Step 1: Create Two VMs, one to be Client and another a server that host Domain Controller (DC-1)
+- Step 2: Test VMs Online Connectivity
+- Step 3: Allow inbound ICMP traffic on DC-1's Firewall
+- Step 4: Test Communication between VMs by perpertual ping
+- Step 5: Promote server to domain
+- Step 6: Created Organzational Units (OU) in Active Directory 
+- Step 7: Join Client-1 to Domain
+- Step 8: Allow Remote Desktop for all domain users on Client-1
+- Step 9: Automate creation of multiple additional domain users using a script on Powershell ISE 
+- Step 10: Test New User Accounts ability to log onto Client-1 computer. Admin should be able to log into client-1 as well. 
 
 <h2>Deployment and Configuration Steps</h2>
 1. Deploying and Provisioning Windows Server Machine (DC-1)
