@@ -116,11 +116,55 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/gwYGZrG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 </p>
+7. Add client-1 to domain
+   <p>
+      <p>
+   <img src="https://i.imgur.com/XbaX26v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+          <p>
+              <p>
 
-<img src="https://i.imgur.com/KVGdRrP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+8. Enable remote desktop for domain users on client-1
 </p>
 <p>
-Active Directory has been installed and the server was promoted to domain status. Next, i will create an admin account & a user account.
+   - remote desktop client-1 using admin credentials
+   <p>
+      <p>
+<img src="https://i.imgur.com/0hm6nwp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+   
+9. Remote desktop client-1 using domain user credentials (babi.com\karen)
+</p>
+<p>
+   - this proves that any domain user can now remote desktop client-1
+   <p>
+      <p>
+      - as you can see, whoami commands shows its karen smith who is one of the domain users and the hostname is client-1.
+         <p>
+      <p>
+     
+<img src="https://i.imgur.com/6GQrJ2c.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+     - and babi.com\karen cannot log into DC-1 since she is not an admin and since DC-1 was not enabled to allow remote desktop by domain users
+   <p>
+      <p>     
+<img src="https://i.imgur.com/MHMdgYr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+10. Automate creation of additional domain users using Powershell
+</p>
+<p>
+   - remote desktop DC-1 using admin credentials
+   <p>
+      <p>
+   - run powershell SE script to add 5 users
+   <p>
+      <p>
+<img src="https://i.imgur.com/0hm6nwp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 </p>
 <br />
 
