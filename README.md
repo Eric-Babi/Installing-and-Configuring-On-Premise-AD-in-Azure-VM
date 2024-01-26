@@ -87,36 +87,36 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/IaWD7HW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
-
-
-
-
-<p>
-<img src="https://i.imgur.com/KopD75T.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+4. Install Active Directory on DC-1 and set up DC-1 as the Domain Controller
+   <p>
+      <p>
+   - Remote Desktop into DC-1 and log in with respect to the domain (babi.com/labuser)
 </p>
 <p>
-Successful deployment of client computer.
+5. Create Organisational Units (OU) in AD
+   <p>
+      <p>
+   - Set-up EMPLOYEE and ADMIN OUs
+<img src="https://i.imgur.com/HiNhfpB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
 </p>
-<br />
+<p>
+6. Create New users and assign one in Admin Group and the other in domain users group
+   <p>
+      <p>
+   - Admin User - babi.com/smith
+          <p>
+              <p>
+<img src="https://i.imgur.com/t6HKQPi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+</p>
+ - Domain User - babi.com/karen
+          <p>
+              <p>
+<img src="https://i.imgur.com/gwYGZrG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+</p>
 
-<p>
-<img src="https://i.imgur.com/G4BgNkB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Here i am going into the server firewall settings to allow ICMP traffic inbound so client computer can communicate with server.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/UgCQRGg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Here i executed a ping command from the client computer to the server to ensure connectivity. As you can see, the connection was successful.
-</p>
-<br />
-
-<p>
 <img src="https://i.imgur.com/KVGdRrP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
