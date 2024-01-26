@@ -158,57 +158,28 @@ This tutorial outlines the implementation of on-premises Active Directory within
    - remote desktop DC-1 using admin credentials
    <p>
       <p>
-   - run powershell SE script to add 5 users
+   - run powershell SE script to add more users
    <p>
       <p>
-<img src="https://i.imgur.com/0hm6nwp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Dxgke0q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
-</p>
 <br />
 
+11. Finally, remote desktop client-1 using one of the random users created through script
 <p>
-<img src="https://i.imgur.com/WFtcVkQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <p>
-Created an employee called jane admin & added her to the Domains Admin group. Next, i will connect client computer to the server.
+<img src="https://i.imgur.com/SM226Pz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+</p>
+12. Disable and enable domain user account
 <br />
-
 <p>
-<img src="https://i.imgur.com/jVQzEdu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+13. Reset user password
 </p>
-Changed client DNS to server private ip address so to allow it to connect to the server.
 </p>
-<br />
-
 <p>
-<img src="https://i.imgur.com/Cdj3FYo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+14. Add domain user account to admin group 
 </p>
-Used ipconfig /all to verify client computer connection to the server. Client DNS is 10.0.0.4 which is the same as the server private ip address.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/ve164yk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Allowing all domain users remote desktop access to server via client computer.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/yxEBpGc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Using Powershell ISE to generate random users to domain users in server.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/wZXTSB8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Logged in as a random non-administrative user on client computer accessing the server.
-</p>
-<br />
 </p>
 
