@@ -40,7 +40,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <br/>
  -  Setting a static private IP for DC-1 to allow consistency in access of resources by clients
-  - Restart the Server for changes to take effect
+   <p>
+      
+   </p>
+ - Go to DC-1's network settings --> select networking --> click the hyperlink next to "network interface" --> "IP Configurations" --> "ipconfig1"
+ </p>
+ - change the assignment from dynamic to static (this ensures DC-1's IP address will not change). 
+ <p>
+ - Restart the Server for changes to take effect
   <p>
 <img src="https://i.imgur.com/qRgFYWf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -48,7 +55,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 2. Deploying and Provisioning Windows Client Copmuter (Client-1)
-   - Ensure waiting for DC-1 to be completely deployed before creating Client-1 so that virtual network for DC-1 is also applied to Client-1
+<p>
+   
+</p>
+   - Check the NIC settings to make sure both VMs are on the same "Vnet" [Client-1-vnet/default]. This will ensure both VMs can communicate & connect with each other later in this lab.
+   <p>
+   - change client-1 DNS to point to the private IP of DC-1 to allow client-1 to join the domain and for name resolution. 
+      <p>
+            <br/>
+<img src="https://i.imgur.com/EAt2puh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 <p>
    <br/>
 <img src="https://i.imgur.com/0uajV1y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
