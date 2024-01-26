@@ -20,16 +20,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1: Create Two VMs, one to be Client and another a server that host Domain Controller (DC-1)
-- Step 2: Test VMs Online Connectivity
-- Step 3: Allow inbound ICMP traffic on DC-1's Firewall
-- Step 4: Test Communication between VMs by perpertual ping
-- Step 5: Promote server to domain
-- Step 6: Created Organzational Units (OU) in Active Directory 
-- Step 7: Join Client-1 to Domain
-- Step 8: Allow Remote Desktop for all domain users on Client-1
-- Step 9: Automate creation of multiple additional domain users using a script on Powershell ISE 
-- Step 10: Test New User Accounts ability to log onto Client-1 computer. Admin should be able to log into client-1 as well. 
+- Create Two VMs, one to be Client and another a server that host Domain Controller (DC-1)
+- Test VMs Online Connectivity
+- Allow inbound ICMP traffic on DC-1's Firewall
+- Test Communication between VMs by perpertual ping
+- Promote server to domain
+- Created Organzational Units (OU) in Active Directory 
+- Join Client-1 to Domain
+- Allow Remote Desktop for all domain users on Client-1
+- Automate creation of multiple additional domain users using a script on Powershell ISE 
+- Test New User Accounts ability to log onto Client-1 computer. Admin should be able to log into client-1 as well. 
 
 <h2>Deployment and Configuration Steps</h2>
 1. Deploying and Provisioning Windows Server Machine (DC-1)
@@ -66,13 +66,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/EAt2puh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  - Restart client-1
 <p>
    <br/>
-<img src="https://i.imgur.com/0uajV1y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+3. Test Communication between DC-1 and Client-1 using pepertul ping
+   <p>
+      <p>
+   - Remote Desktop into DC-1 and Client-1
+<img src="https://i.imgur.com/s3feTsG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
-
+  - On windows Frewall settings, allow inbound traffic for ICMP on DC-1's Firewall.
+<img src="https://i.imgur.com/a5TWV06.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  - Communication between DC-1 and Client-1 Successful
+</p>
+<p>
+ Before firewall settings were changed, the ping command from Client-1 was timing out
+<img src="https://i.imgur.com/IaWD7HW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 
 
